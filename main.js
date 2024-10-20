@@ -24,3 +24,6 @@ function createFlower() {
 }
 
 setInterval(createFlower, 300);
+window.addEventListener('load', function() {
+  document.body.classList.remove('not-loaded');
+});
