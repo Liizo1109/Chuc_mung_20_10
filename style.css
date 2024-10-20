@@ -1038,18 +1038,19 @@ body {
 
 .flower {
   position: absolute;
-  top: -50px;
+  top: 100vh; /* Bắt đầu từ vị trí dưới cùng của màn hình */
   font-size: 24px;
-  animation: fall linear infinite;
+  animation: fall linear infinite; /* Thêm animation */
 }
 
+/* Keyframes cho hiệu ứng hoa rơi từ dưới lên trên */
 @keyframes fall {
   0% {
-    transform: translateY(-100px); /* Bắt đầu từ trên */
+    transform: translateY(0); /* Bắt đầu từ vị trí 0 */
     opacity: 1;
   }
   100% {
-    transform: translateY(100vh); /* Rơi xuống dưới */
+    transform: translateY(-100px); /* Rơi lên trên */
     opacity: 0; /* Dần biến mất */
   }
 }
