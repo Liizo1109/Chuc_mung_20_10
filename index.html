@@ -16,37 +16,14 @@
     <div class="night"></div>
     <div class="happy-woman-day">𝓗𝓪𝓹𝓹𝔂 𝔀𝓸𝓶𝓮𝓷'𝓼 𝓭𝓪𝔂 2️⃣0️⃣/1️⃣0️⃣
         <div class="flower-falling-container"></div>
-
-  <!-- Thêm đoạn script cho hiệu ứng hoa rơi -->
-  <script>
-    const flowers = ['🌸', '🏵️', '🌺', '🌻', '🌼', '🌷', '🌹', '🪻'];
-
-    function createFlower() {
-      const flower = document.createElement('div');
-      flower.classList.add('flower');
-      flower.innerText = flowers[Math.floor(Math.random() * flowers.length)];
-  
-      // Đặt hoa ở bên phải, cách ngẫu nhiên theo chiều dọc (trục Y)
-      flower.style.right = '-50px';
-      flower.style.top = Math.random() * 100 + 'vh'; // Đặt hoa ngẫu nhiên trên chiều dọc
-      flower.style.animationDuration = Math.random() * 3 + 2 + 's'; // Thời gian hoa rơi ngẫu nhiên
-      flower.style.fontSize = Math.random() * 10 + 15 + 'px'; // Kích thước ngẫu nhiên của hoa
-
-      document.querySelector('.flower-falling-container').appendChild(flower);
-
-      setTimeout(() => {
-        flower.remove();
-      }, 5000); // Xóa hoa sau khi rơi
-    }
-
-    setInterval(createFlower, 250); // Tạo hoa mới sau mỗi 300ms
-  </script>
     <p class="message-to-mom">
       Nhân ngày 20/10, chúc cậu sức khỏe, chúc cậu sắc đẹp, chúc công việc của cậu thần tài dẫn lối, "8386".
     <br>Chúc cậu một ngày vạn sự như ý, tỷ sự như mơ, triệu triệu bất ngờ và ngập tràn may mắn.
     <br>TỚ YÊU CẬU❤️
     </p></div>
-    <!-- Thêm phần này cho hiệu ứng hoa rơi -->
+    <div class="flower-falling-container"></div>
+
+      <script src="main.js"></script>
   
     <div class="flowers">
       <div class="flower flower--1">
